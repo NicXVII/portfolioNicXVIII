@@ -1,0 +1,410 @@
+html{
+    scroll-behavior: smooth;
+}
+:root {
+    /* CSS HEX */
+    --primary-bg: #1F2D38ff;
+    --nav-bar-color: #32535Dff;
+    --about-me-bg: #1C2B38ff;
+    --text-color: #5E707Aff;
+    --link-color: #29464Eff;
+    --accent-color: #1F2D38ff;
+    --header-color: #5E707Aff;
+    --info-section-bg: #32535Dff;
+    --itp-section-bg: #1F2D38ff;
+    --sistemi-section-bg: #1F2D38ff;
+    --gradient-colors: #1F2D38ff, #32535Dff, #5E707Aff, #1C2B38ff, #29464Eff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif !important;
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    width: 100%;
+}
+
+/* Header Section */
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../image/stoicism.jpg");
+    background-size: cover;
+    background-color: var(--primary-bg);
+    color: var(--accent-color);
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    margin-top: 25vh;
+    text-align: center;
+}
+
+header p#larger {
+    font-size: 18vh;
+    color: white;
+}
+
+header p#shorter {
+    font-size: 5vh;
+    color: white;
+}
+
+/* Navigation Section */
+#nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 150;
+    height: auto;
+}
+
+#nav.scroll {
+    background-color: rgba(50, 83, 93, 0.7);
+}
+
+#nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav li {
+    display: inline-block;
+    color: var(--text-color);
+}
+
+#nav a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3vh;
+    display: block;
+    padding: 15px 20px;
+}
+
+#nav a:hover {
+    color: var(--accent-color);
+    background-color: rgba(50, 83, 93, 0.5);
+}
+
+
+.selected{
+background-color: aquamarine;
+}
+
+/* About Me Section */
+.about-me {
+    display: flex;
+    margin-top: 0;
+    height: auto;
+    background-color: var(--about-me-bg);
+    width: 100%;
+    height: auto;
+    color: var(--text-color);
+}
+
+.about-me-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.about-me-img img {
+    margin-top: 4vh;
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    margin-bottom: 1vh;
+}
+
+.about-me-info {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 50vw;
+}
+
+.about-me-info p {
+    font-size: 3vh;
+}
+
+/* Academic Program Section */
+.academic-program {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.academic-program p{
+    font-size: 3vh;
+}
+
+.academic-program-info,
+.academic-program-itp,
+.academic-program-sistemi {
+    box-sizing: border-box;
+}
+
+.academic-program-info {
+    width: 50%;
+    text-align: center;
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    padding: 20px;
+}
+
+.academic-program-itp,
+.academic-program-sistemi {
+    width: 25%;
+    text-align: center;
+    background-color: var(--nav-bar-color);
+    color: var(--text-color);
+    padding: 20px;
+}
+.academic-program-sistemi {
+    background-color: var(--accent-color);
+}
+
+/* Skills Section */
+.skills {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.skills-it,
+.skills-human {
+    width: 50%;
+}
+
+.skills-it h2,
+.skills-human h2 {
+    text-align: center;
+    font-size: 7vh;
+}
+
+.skills-human{
+    background-color: var(--itp-section-bg);
+    text-align: center;
+}
+
+.skills-it{
+    background-color: var(--link-color);
+    text-align: center;
+}
+
+.skills-it p,
+.skills-human p {
+    font-size: 4vh;
+    text-align: left;
+    padding-left: 5%;
+}
+
+
+/* Projects Section */
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 0;
+    background-color: var(--about-me-bg);
+    width: 100%;
+    height: auto;
+    color: var(--text-color);
+}
+
+.projects-info {
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    width: 100%;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+#projects p#projects-title {
+    padding-top: 2vh;
+    font-size: 8vh;
+}
+
+.projects-info p {
+    font-size: 5vh;
+    margin-top: 0.5vh;
+}
+
+.projects-info li {
+    margin-top: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    font-size: 3vh;
+}
+
+.projects-info li strong {
+    font-size: 5vh;
+}
+
+.projects-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.projects-img img {
+    margin-top: 4vh;
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    margin-bottom: 1vh;
+}
+
+/* Footer Section */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 3vh;
+    height: auto;
+ }
+
+footer p{
+    margin-right: 10%;
+}
+/* Stili di base */
+
+/* Stili per dispositivi con una larghezza massima di 600px (ad esempio, dispositivi mobili) */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 90%;
+    }
+
+    header p#larger {
+        font-size: 14vh;
+    }
+
+    header p#shorter {
+        font-size: 4vh;
+    }
+
+    .about-me-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .academic-program-info,
+    .academic-program-itp,
+    .academic-program-sistemi {
+        width: 100%;
+        margin-bottom: 2vh;
+    }
+
+    .skills-it,
+    .skills-human {
+        width: 100%;
+    }
+
+    .projects-info {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+/* Stili per dispositivi con una larghezza compresa tra 601px e 1024px (ad esempio, tablet) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 100%;
+    }
+
+    header p#larger {
+        font-size: 16vh;
+    }
+
+    header p#shorter {
+        font-size: 5vh;
+    }
+
+    .about-me-img img {
+        width: 80%;
+        height: auto;
+    }
+
+    .academic-program-info,
+    .academic-program-itp,
+    .academic-program-sistemi {
+        width: 50%;
+        margin-bottom: 2vh;
+    }
+
+    .skills-it,
+    .skills-human {
+        width: 50%;
+    }
+
+    .projects-info {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+/* Stili per dispositivi con una larghezza superiore a 1024px (ad esempio, schermi più grandi) */
+@media only screen and (min-width: 1025px) {
+    body {
+        font-size: 110%;
+    }
+
+    header p#larger {
+        font-size: 18vh;
+    }
+
+    header p#shorter {
+        font-size: 6vh;
+    }
+
+    .about-me {
+        flex-direction: row;
+    }
+
+    .about-me-img,
+    .about-me-info {
+        width: 50%;
+    }
+
+    .about-me-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .academic-program-info,
+    .academic-program-itp,
+    .academic-program-sistemi {
+        width: 33.33%;
+        margin-bottom: 0;
+    }
+
+    .skills-it,
+    .skills-human {
+        width: 50%;
+    }
+
+    .projects-info {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
