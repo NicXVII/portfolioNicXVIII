@@ -300,13 +300,16 @@ footer {
     }
   
     #nav a {
-      font-size: 2vh; /* Modifica la dimensione del testo in base alle tue esigenze */
+      font-size: 1vh; /* Modifica la dimensione del testo in base alle tue esigenze */
       padding: 10px 15px; /* Modifica il padding in base alle tue esigenze */
     }
-  
+    
+    .about-me-img{
+        width: 25%;
+    }
     .about-me-img img {
-      width: 40%; /* Modifica la dimensione dell'immagine in base alle tue esigenze */
-      height: 40%; /* Modifica la dimensione dell'immagine in base alle tue esigenze */
+      width:100%; /* Modifica la dimensione dell'immagine in base alle tue esigenze */
+      height: 50%; /* Modifica la dimensione dell'immagine in base alle tue esigenze */
     }
   
     .about-me-info p {
