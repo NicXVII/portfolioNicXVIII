@@ -285,61 +285,17 @@ footer {
     max-width: 100%;
 }
 
-/* Stili di base */
-@media screen and (min-width: 300px) and (max-width: 400px) {
+@media only screen and (max-width: 480px) {
     body {
-      font-size: 12px; /* Modifica la dimensione del testo in base alle tue esigenze */
-    }
-  
-    header p#larger {
-      font-size: 10vh; /* Modifica la dimensione del testo in base alle tue esigenze */
-    }
-  
-    header p#shorter {
-      font-size: 3vh; /* Modifica la dimensione del testo in base alle tue esigenze */
-    }
-  
-    #nav a {
-      font-size: 1vh; /* Modifica la dimensione del testo in base alle tue esigenze */
-      padding: 10px 15px; /* Modifica il padding in base alle tue esigenze */
-    }
-    
-    .about-me-img{
-        width: 25% !important;
-    }
-    .about-me-img img {
-      width:100%; /* Modifica la dimensione dell'immagine in base alle tue esigenze */
-      height: 50%; /* Modifica la dimensione dell'immagine in base alle tue esigenze */
-    }
-  
-    .about-me-info p {
-      font-size: 2.5vh; /* Modifica la dimensione del testo in base alle tue esigenze */
-    }
-  
-    .academic-program p,
-    .skills-it h2,
-    .skills-human h2,
-    .skills-it p,
-    .skills-human p,
-    .projects-info p,
-    .projects-info li,
-    .projects-info li strong,
-    footer p {
-      font-size: 2vh; /* Modifica la dimensione del testo in base alle tue esigenze */
-    }
-  }
-/* Stili per dispositivi con una larghezza massima di 600px (ad esempio, dispositivi mobili) */
-@media only screen and (max-width: 600px) {
-    body {
-        font-size: 90%;
+        font-size: 85%; /* Riduci la dimensione del testo per schermi più piccoli */
     }
 
     header p#larger {
-        font-size: 14vh;
+        font-size: 14vw;
     }
 
     header p#shorter {
-        font-size: 4vh;
+        font-size: 4vw;
     }
 
     .about-me-img img {
@@ -350,33 +306,27 @@ footer {
     .academic-program-info,
     .academic-program-itp,
     .academic-program-sistemi {
-        width: 100%;
+        width: 90%; /* Aumenta la larghezza per schermi più piccoli */
         margin-bottom: 2vh;
     }
 
     .skills-it,
     .skills-human {
-        width: 100%;
+        width: 90%; /* Aumenta la larghezza per schermi più piccoli */
     }
 
     .projects-info {
-        margin-left: 2%;
-        margin-right: 2%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
+
+    /* Altri stili specifici per telefoni */
 }
 
-/* Stili per dispositivi con una larghezza compresa tra 601px e 1024px (ad esempio, tablet) */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-    body {
-        font-size: 100%;
-    }
-
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* Ottimizzazioni per dispositivi con larghezza tra 481px e 768px (es. telefoni) */
     header p#larger {
-        font-size: 16vh;
-    }
-
-    header p#shorter {
-        font-size: 5vh;
+        font-size: 16vw;
     }
 
     .about-me-img img {
@@ -387,6 +337,39 @@ footer {
     .academic-program-info,
     .academic-program-itp,
     .academic-program-sistemi {
+        width: 70%; /* Aumenta la larghezza per migliorare la leggibilità sui telefoni */
+        margin-bottom: 2vh;
+    }
+
+    .skills-it,
+    .skills-human {
+        width: 70%; /* Aumenta la larghezza per migliorare la leggibilità sui telefoni */
+    }
+
+    .projects-info {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    /* Altri stili specifici per telefoni */
+}
+
+/* Resto del tuo stile comune a tutte le larghezze di schermo */
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Ottimizzazioni per dispositivi con larghezza tra 769px e 1024px (es. tablet) */
+    header p#larger {
+        font-size: 18vw;
+    }
+
+    .about-me-img,
+    .about-me-info {
+        width: 45%; /* Distribuisci uniformemente gli elementi sull'ampio schermo del tablet */
+    }
+
+    .academic-program-info,
+    .academic-program-itp,
+    .academic-program-sistemi {
         width: 50%;
         margin-bottom: 2vh;
     }
@@ -400,50 +383,6 @@ footer {
         margin-left: 5%;
         margin-right: 5%;
     }
-}
 
-/* Stili per dispositivi con una larghezza superiore a 1024px (ad esempio, schermi più grandi) */
-@media only screen and (min-width: 1025px) {
-    body {
-        font-size: 110%;
-    }
-
-    header p#larger {
-        font-size: 18vh;
-    }
-
-    header p#shorter {
-        font-size: 6vh;
-    }
-
-    .about-me {
-        flex-direction: row;
-    }
-
-    .about-me-img,
-    .about-me-info {
-        width: 50%;
-    }
-
-    .about-me-img img {
-        width: 100%;
-        height: auto;
-    }
-
-    .academic-program-info,
-    .academic-program-itp,
-    .academic-program-sistemi {
-        width: 33.33%;
-        margin-bottom: 0;
-    }
-
-    .skills-it,
-    .skills-human {
-        width: 50%;
-    }
-
-    .projects-info {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
+    /* Altri stili specifici per tablet */
 }
