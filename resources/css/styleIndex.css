@@ -303,6 +303,10 @@ footer {
         height: auto;
     }
 
+    .about-me-info{
+        font-size: 1vh;
+    }
+
     .academic-program-info,
     .academic-program-itp,
     .academic-program-sistemi {
