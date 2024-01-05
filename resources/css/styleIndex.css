@@ -298,13 +298,21 @@ footer {
         font-size: 4vw;
     }
 
+    
+    .about-me-img{
+        width: 25%;
+        height: auto;
+    }
     .about-me-img img {
         width: 100%;
         height: auto;
     }
 
     .about-me-info{
-        font-size: 1vh;
+        width: 75%;
+    }
+    .about-me-info p{
+        font-size: 1.75vh;
     }
 
     .academic-program-info,
