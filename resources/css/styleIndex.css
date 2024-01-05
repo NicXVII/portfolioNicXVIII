@@ -255,8 +255,7 @@ background-color: aquamarine;
 
 .projects-info li {
     margin-top: 1vh;
-    margin-left: 1vw;
-    margin-right: 1vw;
+    margin-left: 0.5vw;
     font-size: 3vh;
 }
 
@@ -264,22 +263,6 @@ background-color: aquamarine;
     font-size: 5vh;
 }
 
-.projects-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 100%;
-    flex-direction: column;
-}
-
-.projects-img img {
-    margin-top: 4vh;
-    width: 50%;
-    height: 50%;
-    object-fit: contain;
-    margin-bottom: 1vh;
-}
 
 /* Footer Section */
 footer {
