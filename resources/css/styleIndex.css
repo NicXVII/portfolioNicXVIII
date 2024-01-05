@@ -305,7 +305,7 @@ footer {
     }
     
     .about-me-img{
-        width: 25%;
+        width: 25% !important;
     }
     .about-me-img img {
       width:100%; /* Modifica la dimensione dell'immagine in base alle tue esigenze */
