@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -22,8 +26,11 @@ body {
     font-family: 'Times New Roman', Times, serif !important;
     background-color: var(--primary-bg);
     color: var(--text-color);
-    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; /* Nasconde la barra di scorrimento orizzontale */    
 }
+
+
 
 /* Header Section */
 .home {
@@ -285,10 +292,57 @@ footer {
  }
 
 footer p{
-    margin-right: 10%;
+    margin-right: 5%;
 }
-/* Stili di base */
+.home,
+.about-me,
+.academic-program,
+.skills,
+.projects,
+footer {
+    max-width: 100%;
+}
 
+/* Stili di base */
+@media screen and (min-width: 300px) and (max-width: 400px) {
+    body {
+      font-size: 12px; /* Modifica la dimensione del testo in base alle tue esigenze */
+    }
+  
+    header p#larger {
+      font-size: 10vh; /* Modifica la dimensione del testo in base alle tue esigenze */
+    }
+  
+    header p#shorter {
+      font-size: 3vh; /* Modifica la dimensione del testo in base alle tue esigenze */
+    }
+  
+    #nav a {
+      font-size: 2vh; /* Modifica la dimensione del testo in base alle tue esigenze */
+      padding: 10px 15px; /* Modifica il padding in base alle tue esigenze */
+    }
+  
+    .about-me-img img {
+      width: 40%; /* Modifica la dimensione dell'immagine in base alle tue esigenze */
+      height: 40%; /* Modifica la dimensione dell'immagine in base alle tue esigenze */
+    }
+  
+    .about-me-info p {
+      font-size: 2.5vh; /* Modifica la dimensione del testo in base alle tue esigenze */
+    }
+  
+    .academic-program p,
+    .skills-it h2,
+    .skills-human h2,
+    .skills-it p,
+    .skills-human p,
+    .projects-info p,
+    .projects-info li,
+    .projects-info li strong,
+    footer p {
+      font-size: 2vh; /* Modifica la dimensione del testo in base alle tue esigenze */
+    }
+  }
 /* Stili per dispositivi con una larghezza massima di 600px (ad esempio, dispositivi mobili) */
 @media only screen and (max-width: 600px) {
     body {
